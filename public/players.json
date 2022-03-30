@@ -1,0 +1,16 @@
+[
+  {
+    "firstName": "Vinicius",
+    "lastName": "Jr.",
+    "club": "Real Madrid",
+    "position": "Atacante",
+    "background": "/players/vini/vini2.png"
+  },
+  {
+    "firstName": "Neymar",
+    "lastName": "Jr.",
+    "club": "Paris Saint German",
+    "position": "Atacante",
+    "background": "/players/neymar/neymar2.png"
+  }
+]
