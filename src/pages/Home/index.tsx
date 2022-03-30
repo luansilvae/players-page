@@ -1,5 +1,10 @@
 import React from 'react'
 import { usePlayer } from '../../hooks/usePlayer'
+import { Navigation } from 'swiper'
+
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/navigation'
 
 import { Container, PlayerImage, Header, PlayerName, PlayerInfo } from './style'
 
@@ -58,6 +63,24 @@ export const Home: React.FC = () => {
           <strong>{player?.position}</strong>
         </li>
       </PlayerInfo>
+
+      <Swiper
+        modules={[Navigation]}
+        spaceBetween={30}
+        slidesPerView={2}
+        slidesPerGroup={1}
+        initialSlide={2}
+        loop
+        navigation
+        className="gallery"
+      >
+        {player?.gallery.map((image, index) => (
+          <SwiperSlide key={index} className="slide-gallery">
+            <img src={image} alt="Plyaer" />
+            <span>{String(index + 1).padStart(2, '0')}</span>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </Container>
   )
 }

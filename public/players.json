@@ -4,13 +4,25 @@
     "lastName": "Jr.",
     "club": "Real Madrid",
     "position": "Atacante",
-    "background": "/players/vini/vini2.png"
+    "background": "/players/vini/vini.png",
+    "gallery": [
+      "players/vini/vini-gallery1.png",
+      "players/vini/vini-gallery2.webp",
+      "players/vini/vini-gallery3.webp",
+      "players/vini/vini-gallery4.png"
+    ]
   },
   {
     "firstName": "Neymar",
     "lastName": "Jr.",
     "club": "Paris Saint German",
     "position": "Atacante",
-    "background": "/players/neymar/neymar2.png"
+    "background": "/players/neymar/neymar.png",
+    "gallery": [
+      "players/neymar/neymar-gallery1.png",
+      "players/neymar/neymar-gallery2.png",
+      "players/neymar/neymar-gallery3.png",
+      "players/neymar/neymar-gallery4.png"
+    ]
   }
 ]

@@ -10,6 +10,88 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
+
+  @media (max-width: 1024px) {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .gallery {
+    background: transparent;
+    position: absolute;
+    bottom: 30px;
+    right: -80px;
+    max-width: 654px;
+    width: 100%;
+    height: 194px;
+    z-index: 200;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      left: 0;
+      right: 0;
+      padding: 0 15px;
+    }
+
+    .slide-gallery {
+      width: 312px;
+      height: 100%;
+      display: flex;
+      position: relative;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      > span {
+        color: #ffffff;
+        font-family: var(--font-sofia);
+        font-size: 22px;
+        font-weight: 900;
+        position: absolute;
+        bottom: 12px;
+        left: 12px;
+
+        :after {
+          content: '';
+          width: 70px;
+          height: 2px;
+          background: #ffffff;
+          position: absolute;
+          top: 50%;
+          margin-left: 8px;
+        }
+      }
+    }
+
+    .swiper-button-prev {
+      visibility: hidden;
+    }
+
+    .swiper-button-next {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      margin-right: 120px;
+      box-shadow: 0px 3px 7px 6px rgba(0, 0, 0, 0.25);
+
+      @media (max-width: 768px) {
+        margin-right: 20px;
+      }
+
+      &:after {
+        color: #000000;
+        font-size: 18px;
+        font-weight: 800;
+      }
+    }
+  }
 `
 
 export const Header = styled.header`
@@ -78,6 +160,14 @@ export const PlayerName = styled.div`
       margin-left: 1rem;
       font-weight: 700;
     }
+
+    @media (max-width: 1024px) {
+      font-size: 14vw;
+
+      > span {
+        font-size: 3vw;
+      }
+    }
   }
 `
 
@@ -99,6 +189,12 @@ export const PlayerInfo = styled.ul`
   gap: 40px;
   justify-self: flex-start;
   width: 446px;
+  z-index: 200;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    max-width: 100%;
+  }
 
   li {
     display: flex;
@@ -106,10 +202,11 @@ export const PlayerInfo = styled.ul`
     gap: 5px;
     padding-top: 20px;
     width: 100%;
-    position: relative;
 
     font-family: var(--font-sofia);
     color: var(--secondary);
+
+    border-top: solid 2px var(--secondary);
 
     > span {
       font-weight: 600;
@@ -121,16 +218,6 @@ export const PlayerInfo = styled.ul`
       text-transform: uppercase;
       font-size: 18px;
     }
-
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-
-      height: 1.5px;
-      background: var(--secondary);
-    }
   }
 `
+export const PlayerGallery = styled.div``

@@ -7,6 +7,7 @@ interface Player {
   club: string
   position: string
   background: string
+  gallery: string[]
 }
 
 export const usePlayer = () => {

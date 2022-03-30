@@ -54,8 +54,10 @@ html {
 body {
   background-color: var(--primary);
   font-family: 'Heading Pro Wide', sans-serif;
-  transition: color 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out;
+  transition: color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
 
 ol,
