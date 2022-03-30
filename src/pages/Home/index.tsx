@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { usePlayer } from '../../hooks/usePlayer'
 import { Navigation } from 'swiper'
 
@@ -13,6 +14,9 @@ export const Home: React.FC = () => {
 
   return (
     <Container>
+      <Helmet>
+        <title>{`${player?.firstName} ${player?.lastName}`} Page</title>
+      </Helmet>
       <Header>
         <h2>{player?.firstName === 'Neymar' ? 'NJ' : 'VJ'}</h2>
 
