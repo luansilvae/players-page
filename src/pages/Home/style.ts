@@ -2,96 +2,14 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   min-height: 100vh;
-  height: 100%;
-  max-width: 1300px;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 30px 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-
-  @media (max-width: 1024px) {
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5rem;
-  }
-
-  .gallery {
-    background: transparent;
-    position: absolute;
-    bottom: 30px;
-    right: -80px;
-    max-width: 654px;
-    width: 100%;
-    height: 194px;
-    z-index: 200;
-
-    @media (max-width: 768px) {
-      width: 100%;
-      left: 0;
-      right: 0;
-      padding: 0 15px;
-    }
-
-    .slide-gallery {
-      width: 312px;
-      height: 100%;
-      display: flex;
-      position: relative;
-
-      > img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      > span {
-        color: #ffffff;
-        font-family: var(--font-sofia);
-        font-size: 22px;
-        font-weight: 900;
-        position: absolute;
-        bottom: 12px;
-        left: 12px;
-
-        :after {
-          content: '';
-          width: 70px;
-          height: 2px;
-          background: #ffffff;
-          position: absolute;
-          top: 50%;
-          margin-left: 8px;
-        }
-      }
-    }
-
-    .swiper-button-prev {
-      visibility: hidden;
-    }
-
-    .swiper-button-next {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: #ffffff;
-      display: flex;
-      align-items: center;
-      margin-right: 120px;
-      box-shadow: 0px 3px 7px 6px rgba(0, 0, 0, 0.25);
-
-      @media (max-width: 768px) {
-        margin-right: 20px;
-      }
-
-      &:after {
-        color: #000000;
-        font-size: 18px;
-        font-weight: 800;
-      }
-    }
-  }
+  gap: 30px;
 `
 
 export const Header = styled.header`
@@ -139,7 +57,7 @@ export const Header = styled.header`
 
 export const PlayerName = styled.div`
   width: 100%;
-  margin: 0 auto;
+  margin: 3rem auto 0;
   display: flex;
   flex-direction: column;
   z-index: 200;
@@ -168,6 +86,10 @@ export const PlayerName = styled.div`
         font-size: 3vw;
       }
     }
+
+    @media (max-width: 480px) {
+      font-size: 48px;
+    }
   }
 `
 
@@ -183,13 +105,105 @@ export const PlayerImage = styled.img`
   max-width: 100%;
   max-height: 100%;
   object-fit: fill;
+
+  @media (max-width: 520px) {
+    top: 90px;
+  }
 `
+
+export const PlayerContent = styled.div`
+  width: 100%;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 640px) {
+    flex-direction: column-reverse;
+  }
+
+  .gallery {
+    max-width: 680px;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+
+    @media (max-width: 640px) {
+      height: 300px;
+    }
+
+    @media (max-width: 520px) {
+      height: 200px;
+    }
+
+    .slide-gallery {
+      width: 100%;
+      height: 100%;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      > span {
+        color: #ffffff;
+        font-family: var(--font-sofia);
+        font-size: 22px;
+        font-weight: 900;
+        position: absolute;
+        bottom: 12px;
+        left: 12px;
+
+        :after {
+          content: '';
+          width: 70px;
+          height: 2px;
+          background: #ffffff;
+          position: absolute;
+          top: 50%;
+          margin-left: 8px;
+        }
+      }
+    }
+
+    .swiper-button-prev {
+      visibility: hidden;
+    }
+
+    .swiper-button-next {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      box-shadow: 0px 3px 7px 6px rgba(0, 0, 0, 0.25);
+
+      @media (max-width: 768px) {
+        margin-right: 20px;
+      }
+
+      &:after {
+        color: #000000;
+        font-size: 18px;
+        font-weight: 800;
+      }
+    }
+  }
+`
+
 export const PlayerInfo = styled.ul`
   display: flex;
   gap: 40px;
-  justify-self: flex-start;
-  width: 446px;
-  z-index: 200;
+  max-width: 600px;
+  width: 100%;
 
   @media (max-width: 480px) {
     flex-direction: column;
@@ -220,4 +234,3 @@ export const PlayerInfo = styled.ul`
     }
   }
 `
-export const PlayerGallery = styled.div``

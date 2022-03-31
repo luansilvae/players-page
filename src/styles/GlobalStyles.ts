@@ -56,8 +56,6 @@ body {
   font-family: 'Heading Pro Wide', sans-serif;
   transition: color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out;
-  position: relative;
-  overflow: hidden;
 }
 
 ol,
