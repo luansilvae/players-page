@@ -44,6 +44,24 @@
 
 ![Captura de tela 2022-03-30 201913](https://user-images.githubusercontent.com/86011816/160951043-aa9059e4-63b5-401c-b961-d59ca4061ff6.png)
 
+## Projeto 💻
+O protótipo desse website foi desenvolvido pela [**Subtl**](https://dribbble.com/subtl).
+
+
+<div align="center">
+  
+  <a title="figma" href="https://www.figma.com/file/wwRTCuN8KFmY8HVQRD4Zjv/live-code?node-id=2%3A2">
+      <img alt="Direct Download" src="https://img.shields.io/badge/Ver layout no figma-007ACC?style=for-the-badge&logo=figma&logoColor=white" width="250px" />
+  </a>
+  
+  <br/>
+  
+  <a href="https://www.figma.com/file/wwRTCuN8KFmY8HVQRD4Zjv/live-code?node-id=2%3A2">
+    <img src="https://user-images.githubusercontent.com/86011816/161456332-823a6e6e-8943-4430-82ab-a0d3be9861ac.png" />
+  </a>   
+  
+</div>
+
 
 ## 🚀 Tecnologias e ferramentas utilizadas
 
