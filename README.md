@@ -73,6 +73,9 @@ Este projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 
 - [**Styled-Components**](https://styled-components.com/)
 
+- [**Swiper**](https://swiperjs.com/)
+
+
 
 ## 🔧 Instalação e execução
 
