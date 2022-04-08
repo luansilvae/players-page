@@ -60,10 +60,8 @@ export const Home: React.FC = () => {
       ></PlayerImage>
 
       <PlayerName>
-        <h1>
-          {player?.firstName}
-          <span>{player?.lastName}</span>
-        </h1>
+        <h1>{player?.firstName}</h1>
+        <h2>{player?.lastName}</h2>
       </PlayerName>
 
       <PlayerContent>
